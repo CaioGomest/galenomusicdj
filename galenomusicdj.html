@@ -1,0 +1,389 @@
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<link rel="stylesheet"
+    href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
+
+
+<style>
+    .burguer-icon {
+        width: 25px;
+        height: 25px;
+        position: relative;
+    }
+
+    .burguer-line {
+        width: 100%;
+        height: 3px;
+        background-color: #ffffff;
+        /* Cor das linhas */
+        position: absolute;
+        transition: transform 0.3s ease;
+    }
+
+    .burguer-line:nth-child(1) {
+        top: 0;
+    }
+
+    .burguer-line:nth-child(2) {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .burguer-line:nth-child(3) {
+        bottom: 0;
+    }
+
+    #navbar-toggle {
+        border: none;
+    }
+
+    .whatsapp-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 60px;
+        height: 60px;
+        background-color: #25d366;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 999;
+        transition: opacity 0.3s ease;
+    }
+
+    .whatsapp-button img {
+        width: 50%;
+        height: auto;
+    }
+
+    @media screen and (max-width: 767px) {
+        .whatsapp-button {
+            width: 50px;
+            height: 50px;
+            bottom: 30px;
+            right: 15px;
+        }
+
+        .whatsapp-button img {
+            width: 60%;
+        }
+    }
+</style>
+<header class="bg-black text-gray-700 body-font border-b border-gray-200">
+    <div class="flex flex-wrap p-5 justify-between md:flex-row items-center">
+        <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0" href="https://tailblocks.cc"
+            target="_blank">
+            <img src="/assets/logo/Logo_galenomusicdj.png"
+                style="width:50px; filter: drop-shadow(0 0 0.75rem rgb(255, 255, 255));" alt="Logo_galenomusicdj"
+                style="width: 50px;">
+            <span class="text-white ml-3 text-xl">GalenomusicDJ</span>
+        </a>
+        <button
+            class="border border-solid border-gray-600 px-3 py-1 rounded text-gray-600 opacity-50 hover:opacity-75 md:hidden"
+            id="navbar-toggle">
+            <div class="burguer-icon">
+                <div class="burguer-line"></div>
+                <div class="burguer-line"></div>
+                <div class="burguer-line"></div>
+            </div>
+        </button>
+        <nav class="hidden md:flex md:ml-auto flex-wrap items-center text-base justify-center">
+            <a href="Home.html" class="cursor-pointer mr-5 text-white hover:text-gray-300">Home</a>
+            <a href="Sobre.html" class="cursor-pointer mr-5 text-white hover:text-gray-300">Sobre</a>
+            <a href="Serviços.html" class="cursor-pointer mr-5 text-white hover:text-gray-300">Serviços</a>
+            <a href="Pacotes.html" class="cursor-pointer mr-5 text-white hover:text-gray-300">Pacotes</a>
+            <a href="Portifolio.html" class="cursor-pointer mr-5 text-white hover:text-gray-300">Portifolio</a>
+        </nav>
+    </div>
+</header>
+
+<body>
+    <a href="https://wa.me/5511966403958" target="_blank" class="whatsapp-button">
+        <img src="/assets/icons/whatsapp.png" alt="WhatsApp Icon">
+    </a>
+
+    <section class="text-gray-700 body-font">
+        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+            <div
+                class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Lorem ipsum dolor sit amet
+                    gluten
+                </h1>
+                <p class="mb-8 leading-relaxed">Lorem ipsum dolor sit amet. Aut voluptatem voluptatum id esse itaque et
+                    error officiis. Ex modi magnam est voluptas
+                    exercitationem vel minus unde aut reprehenderit illum id possimus dignissimos? Aut harum dolor At
+                    voluptates laudantium
+                    eos aliquam tempore nam velit vitae.
+                    .</p>
+                <div class="flex justify-center">
+                    <button
+                        class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Botão</button>
+                    <button
+                        class="ml-4 inline-flex text-gray-700 bg-gray-200 border-0 py-2 px-6 focus:outline-none hover:bg-gray-300 rounded text-lg">Botão</button>
+                </div>
+            </div>
+            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+                <img class="object-cover object-center rounded" alt="hero" src="/assets/imgs/img.jpg">
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="flex items-center justify-center py-20 bg-white min-w-screen">
+        <div class="px-16 bg-white">
+            <div class="container flex flex-col items-start mx-auto lg:items-center">
+                <p
+                    class="relative flex items-start justify-start w-full text-lg font-bold tracking-wider text-purple-500 uppercase lg:justify-center lg:items-center">
+                    NÃO ACREDITE APENAS NA NOSSA PALAVRA
+                </p>
+
+
+                <h2
+                    class="text-center relative flex items-start justify-start w-full max-w-3xl text-5xl font-bold lg:justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                        class="absolute right-0 hidden w-12 h-12 -mt-2 -mr-16 text-gray-200 lg:inline-block"
+                        viewBox="0 0 975.036 975.036">
+                        <path
+                            d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z">
+                        </path>
+                    </svg>
+                    Veja o que os outros estão dizendo
+                </h2>
+                <div class="block w-full h-0.5 max-w-lg mt-6 bg-purple-100 rounded-full"></div>
+
+                <div class="items-center justify-center w-full mt-12 mb-4 lg:flex">
+                    <div class="flex flex-col items-start justify-start w-full h-auto mb-12 lg:w-1/3 lg:mb-0">
+                        <div class="flex items-center justify-center">
+                            <div class="w-16 h-16 mr-4 overflow-hidden bg-gray-200 rounded-full">
+                                <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1700&amp;q=80"
+                                    class="object-cover w-full h-full">
+                            </div>
+                            <div class="flex flex-col items-start justify-center">
+                                <h4 class="font-bold text-gray-800">John Doe</h4>
+                                <p class="text-gray-600">Gerente de Festas</p>
+                            </div>
+                        </div>
+                        <blockquote class="mt-8 text-lg text-gray-500">"Isso é óbvio se você deseja levar seu negócio
+                            para o
+                            próximo nível. Se você está procurando o conjunto de ferramentas
+                            definitivo, é isso!"
+                        </blockquote>
+                    </div>
+                    <div
+                        class="flex flex-col items-start justify-start w-full h-auto px-0 mx-0 mb-12 border-l border-r border-transparent lg:w-1/3 lg:mb-0 lg:px-8 lg:mx-8 lg:border-gray-200">
+                        <div class="flex items-center justify-center">
+                            <div class="w-16 h-16 mr-4 overflow-hidden bg-gray-200 rounded-full">
+                                <img src="https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=2547&amp;q=80"
+                                    class="object-cover w-full h-full">
+                            </div>
+                            <div class="flex flex-col items-start justify-center">
+                                <h4 class="font-bold text-gray-800">Jane Doe</h4>
+                                <p class="text-gray-600">Musico</p>
+                            </div>
+                        </div>
+                        <blockquote class="mt-8 text-lg text-gray-500">"Obrigado por criar este serviço. Minha vida é
+                            muito
+                            mais fácil. Obrigado por criar um produto tão excelente"</blockquote>
+                    </div>
+                    <div class="flex flex-col items-start justify-start w-full h-auto lg:w-1/3">
+                        <div class="flex items-center justify-center">
+                            <div class="w-16 h-16 mr-4 overflow-hidden bg-gray-200 rounded-full">
+                                <img src="https://images.unsplash.com/photo-1545167622-3a6ac756afa4?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1256&amp;q=80"
+                                    class="object-cover w-full h-full">
+                            </div>
+                            <div class="flex flex-col items-start justify-center">
+                                <h4 class="font-bold text-gray-800">John Smith</h4>
+                                <p class="text-gray-600">Gerente de Eventos</p>
+                            </div>
+                        </div>
+                        <blockquote class="mt-8 text-lg text-gray-500">"Cheio de conteúdo incrível e exatamente o que eu
+                            procurava. Eu recomendo isso para qualquer pessoa."</blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="text-gray-700 body-font border-t border-gray-200">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-col text-center w-full mb-20">
+                <h2 class="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">Lorem ipsum </h2>
+                <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900">Lorem ipsum dolor sit amet.</h1>
+            </div>
+            <div class="flex flex-wrap -m-4">
+                <div class="p-4 md:w-1/3">
+                    <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+                        <div class="flex items-center mb-3">
+                            <div
+                                class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-white flex-shrink-0">
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                                </svg>
+                            </div>
+                            <h2 class="text-gray-900 text-lg title-font font-medium">Lorem ipsum dolor sit amet</h2>
+                        </div>
+                        <div class="flex-grow">
+                            <p class="leading-relaxed text-base">Sit beatae beatae aut sunt internos qui odio nisi ut
+                                suscipit voluptatem aut cumque ducimus ab error consequatur.</p>
+                            <a class="mt-3 text-indigo-500 inline-flex items-center">Saiba Mais
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4 md:w-1/3">
+                    <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+                        <div class="flex items-center mb-3">
+                            <div
+                                class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-white flex-shrink-0">
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                    <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                                    <circle cx="12" cy="7" r="4"></circle>
+                                </svg>
+                            </div>
+                            <h2 class="text-gray-900 text-lg title-font font-medium">The Lorem</h2>
+                        </div>
+                        <div class="flex-grow">
+                            <p class="leading-relaxed text-base">Sit beatae beatae aut sunt internos qui odio nisi ut
+                                suscipit voluptatem aut cumque ducimus ab error consequatur.</p>
+                            <a class="mt-3 text-indigo-500 inline-flex items-center">Saiba Mais
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4 md:w-1/3">
+                    <div class="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
+                        <div class="flex items-center mb-3">
+                            <div
+                                class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-white flex-shrink-0">
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                    <circle cx="6" cy="6" r="3"></circle>
+                                    <circle cx="6" cy="18" r="3"></circle>
+                                    <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
+                                </svg>
+                            </div>
+                            <h2 class="text-gray-900 text-lg title-font font-medium">ipsum</h2>
+                        </div>
+                        <div class="flex-grow">
+                            <p class="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar
+                                toast
+                                vegan taxidermy. Gastropub indxgo juice poutine.</p>
+                            <a class="mt-3 text-indigo-500 inline-flex items-center">Saiba Mais
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="text-gray-700 body-font relative">
+        <div class="absolute inset-0 bg-gray-300">
+            <iframe width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0" title="map"
+                scrolling="no"
+                src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=%C4%B0zmir+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
+                style="filter: grayscale(1) contrast(1.2) opacity(0.4);"></iframe>
+        </div>
+        <div class="container px-5 py-24 mx-auto flex">
+            <div
+                class="lg:w-1/3 md:w-1/2 bg-white rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10">
+                <h2 class="text-gray-900 text-lg mb-1 font-medium title-font">Nos Envie Uma Mensagem</h2>
+
+                <input
+                    class="bg-white rounded border border-gray-400 focus:outline-none focus:border-indigo-500 text-base px-4 py-2 mb-4"
+                    placeholder="Seu Nome" type="text">
+                <textarea
+                    class="bg-white rounded border border-gray-400 focus:outline-none h-32 focus:border-indigo-500 text-base px-4 py-2 mb-4 resize-none"
+                    placeholder="Sua Mensagem"></textarea>
+                <button
+                    class="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Enviar</button>
+
+            </div>
+        </div>
+    </section>
+    <!--Footer container-->
+    <footer class="relative bg-blueGray-200 pt-8 pb-6">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap text-left lg:text-left">
+                <div class="w-full lg:w-6/12 px-4">
+                    <h4 class="text-3xl fonat-semibold text-blueGray-700">Vamos manter contato!
+                    </h4>
+                    <h5 class="text-lg mt-0 mb-2 text-blueGray-600">
+                        Encontre-nos em qualquer uma dessas plataformas, respondemos em até 2 dia úteis.
+                    </h5>
+                    <div class="mt-6 lg:mb-0 mb-6">
+                        <a href="https://wa.me/seunumerodetelefone" target="_blank"
+                            class="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://www.facebook.com/seufacebook" target="_blank"
+                            class="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                        <a href="https://www.instagram.com/seuinstagram" target="_blank"
+                            class="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="w-full lg:w-6/12 px-4">
+                    <div class="flex flex-wrap items-top mb-6">
+                        <div class="w-full lg:w-4/12 px-4 ml-auto">
+                            <span class="block uppercase text-blueGray-500 text-sm font-semibold mb-2">
+                                Links Úteis</span>
+                            <ul class="list-unstyled">
+
+                                <li>
+                                    <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                                        href="Home.html">Home</a>
+                                </li>
+                                <li>
+                                    <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                                        href="Sobre.html">Sobre Nos</a>
+                                </li>
+                                <li>
+                                    <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                                        href="Serviços.html">Serviços</a>
+                                </li>
+                                <li>
+                                    <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                                        href="Pacotes.html">Pacotes</a>
+                                </li>
+                                <li>
+                                    <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                                        href="Portifolio.html">Portifolio</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-6 border-blueGray-300">
+            <div class="flex flex-wrap items-center md:justify-between justify-center">
+                <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+                    <div class="text-sm text-blueGray-500 font-semibold py-1">
+                        Copyright © <span id="get-current-year">2024</span><a
+                            href="https://www.creative-tim.com/product/notus-js"
+                            class="text-blueGray-500 hover:text-gray-800" target="_blank"> galenomusicdj
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
